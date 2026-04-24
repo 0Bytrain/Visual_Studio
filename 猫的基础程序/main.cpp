@@ -19,7 +19,7 @@ int main()
     ShowStatus(&MyCat);
     printf("请选择操作:\n");
     printf("1. 投喂\n");
-    printf("2. 洗澡\n");
+    printf("2. 洗澡\n"); 
     printf("3. 玩耍\n");
     printf("4. 查看状态\n");
     printf("0. 退出游戏\n");

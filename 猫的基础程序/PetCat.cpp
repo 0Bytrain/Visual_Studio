@@ -19,7 +19,7 @@ void initCat(CatState * MyCat, char* name)
 	MyCat->Live = 1;
 }
 
-void ShowStatus(CatState* MyCat)
+/*void ShowStatus(CatState* MyCat)
 {
 	printf("下面是你的宠物 %s 的状态\n", MyCat->name);
 	printf("****************************************\n");
@@ -56,11 +56,11 @@ void CheckStatus(CatState* MyCat)
 		MyCat->Live = 0;
 	}
 
-}
+}*/
 void Feed(CatState * MyCat)
 {
-	printf("你给 %s 喂了美味的猫粮。\n\n", MyCat->name);
-	printf("猫猫：(=w=) mmm... 嚼嚼嚼 \n\n");
+/*	printf("你给 %s 喂了美味的猫粮。\n\n", MyCat->name);
+	printf("猫猫：(=w=) mmm... 嚼嚼嚼 \n\n");*/
 	/*投喂减少饥饿度，增加心情度*/
 	MyCat->Hunger -= Feed_HungerValue;
 	MyCat->Mood += Feed_Moodvalue;
@@ -78,8 +78,8 @@ void Feed(CatState * MyCat)
 
 void Play(CatState* MyCat)
 {
-	printf("你和 %s 一起愉快的玩耍了。\n\n", MyCat->name);
-	printf("猫猫：(*≧ω≦)喵~ \n\n");
+/*	printf("你和 %s 一起愉快的玩耍了。\n\n", MyCat->name);
+	printf("猫猫：(*≧ω≦)喵~ \n\n");*/
 	/*玩耍增加饥饿度，增加心情度*/
 	MyCat->Hunger += Play_HungerValue;
 	MyCat->Mood   += Play_MoodValue;
@@ -97,8 +97,8 @@ void Play(CatState* MyCat)
 
 void Bath(CatState* MyCat)
 {
-	printf("你给 %s 彻底的清洗了一遍。\n\n", MyCat->name);
-	printf("猫猫：( o_o )！！！ 甩干干 \n\n");
+/*	printf("你给 %s 彻底的清洗了一遍。\n\n", MyCat->name);
+	printf("猫猫：( o_o )！！！ 甩干干 \n\n");*/
 	/*洗澡增加清洁度，减少心情度*/
 	MyCat->Cleanliness += Bath_Cleanvalue;
 	MyCat->Mood		   -= Bath_Moodvalue;
